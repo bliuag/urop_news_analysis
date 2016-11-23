@@ -669,7 +669,8 @@ if __name__ == '__main__':
     
     loc_data  = os.path.join(g_loc_tmp, "data.pkl")
     ################
-    process_make_data_paral(30, lst_doc, map_sid_date_p, gap=2, loc_data)
+    # change the num of threads to run the paral program
+    process_make_data_paral(3, lst_doc, map_sid_date_p, gap=2, loc_data)
     ################
     # make_data(loc_data, lst_doc, map_sid_date_p, gap = 2)
     ################
